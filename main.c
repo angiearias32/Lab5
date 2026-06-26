@@ -1,29 +1,30 @@
 #include <stdio.h>
-#include "include/dynamic_array.h"
+#include "include/linked_list.h"
 
-int main() { // esta funcion prueba las funciones implementadas anteriormente
+int main() {
 
-    DynamicArray *array = createArray();
+    LinkedList *list = createList();
 
-    printf("Arreglo inicial:\n");
-    printArray(array);
+    printf("lista inicial:\n");
+    printList(list);
 
-    addElement(array, 10);
-    addElement(array, 20);
-    addElement(array, 30);
-    addElement(array, 40);
+    addNode(list, 10);
+    addNode(list, 20);
+    addNode(list, 30);
+    addNode(list, 40);
 
-    printf("\nDespues de agregar elementos:\n");
-    printArray(array);
+    printf("\nDespues de agregar nodos:\n");
+    printList(list);
 
-    printf("\nElement en la posicion 2: %d\n", getElement(array, 2));
+    printf("\nBuscar 20: %d\n", findNode(list, 20));
+    printf("Buscar 100: %d\n", findNode(list, 100));
 
-    removeElement(array, 1);
+    removeNode(list, 20);
 
-    printf("\nDespues de eliminar el indice 1:\n");
-    printArray(array);
+    printf("\nDespues de eliminar el 20:\n");
+    printList(list);
 
-    freeArray(array);
+    freeList(list);
 
     return 0;
 }

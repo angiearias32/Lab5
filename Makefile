@@ -3,7 +3,7 @@ CFLAGS = -Wall -Wextra -Iinclude
 
 TARGET = main
 
-SRC = main.c src/dynamic_array.c
+SRC = main.c src/linked_list.c
 
 $(TARGET): $(SRC)
 
