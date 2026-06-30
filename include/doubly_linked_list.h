@@ -4,7 +4,7 @@
 typedef struct DNode {
 
     int data;
-    struct DNode *next;
+    struct DNode *next; // estas son los comandos que nos permite recorrer la lista en ambos sentidos
     struct DNode *prev;
 
 } DNode;
@@ -18,15 +18,15 @@ typedef struct {
 
 DoublyLinkedList* createList();
 
-void insertAtBeginning(DoublyLinkedList *list int value);
+void insertAtBeginning(DoublyLinkedList *list, int value);
 
-void insertAtEnd(DoublyLinkedList *list int value);
+void insertAtEnd(DoublyLinkedList *list, int value);
 
-void insertAtPosition(DoublyLinkedList *list int value, int position);
+void insertAtPosition(DoublyLinkedList *list, int value, int position);
 
 void removeNode(DoublyLinkedList *list, int value);
 
-int findNode(DoublyLInkedList *list, int value);
+int findNode(DoublyLinkedList *list, int value);
 
 void printForward(DoublyLinkedList *list);
 

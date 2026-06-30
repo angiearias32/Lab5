@@ -3,7 +3,7 @@ CFLAGS = -Wall -Wextra -Iinclude
 
 TARGET = main
 
-SRC = main.c src/linked_list.c
+SRC = main_doubly.c src/doubly_linked_list.c
 
 $(TARGET): $(SRC)
 
