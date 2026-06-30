@@ -3,10 +3,10 @@ CFLAGS = -Wall -Wextra -Iinclude
 
 TARGET = main
 
-SRC = main_doubly.c src/doubly_linked_list.c
+
+SRC = main_stack.c src/stack.c
 
 $(TARGET): $(SRC)
-
 	$(CC) $(CFLAGS) $(SRC) -o $(TARGET)
 
 clean:
